@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tebak Skor FIFA World Cup 2026</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🏆 Tebak Skor FIFA World Cup 2026</h1>
+    <p>Prediksi Babak 16 Besar dan Juara Dunia</p>
+</header>
+
+<nav>
+    <a href="#jadwal">Jadwal</a>
+    <a href="#skor">Tebak Skor</a>
+    <a href="#juara">Tebak Juara</a>
+    <a href="#bracket">Bracket</a>
+    <a href="#leaderboard">Leaderboard</a>
+</nav>
+
+<div class="container">
+
+    <div class="card" id="jadwal">
+        <h2>📅 Jadwal Babak 16 Besar</h2>
+
+        <div class="schedule">
+            <div class="match-card">
+                <h4>Argentina vs Portugal</h4>
+                <p>10 Juli 2026</p>
+            </div>
+
+            <div class="match-card">
+                <h4>Brazil vs Jerman</h4>
+                <p>10 Juli 2026</p>
+            </div>
+
+            <div class="match-card">
+                <h4>Prancis vs Belanda</h4>
+                <p>11 Juli 2026</p>
+            </div>
+
+            <div class="match-card">
+                <h4>Inggris vs Spanyol</h4>
+                <p>11 Juli 2026</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" id="skor">
+        <h2>⚽ Tebak Skor</h2>
+
+        <input type="text" id="nama" placeholder="Nama Peserta">
+
+        <select id="match">
+            <option>Argentina vs Portugal</option>
+            <option>Brazil vs Jerman</option>
+            <option>Prancis vs Belanda</option>
+            <option>Inggris vs Spanyol</option>
+        </select>
+
+        <input type="number" id="skor1" placeholder="Skor Tim 1">
+        <input type="number" id="skor2" placeholder="Skor Tim 2">
+
+        <button onclick="simpanPrediksi()">
+            Simpan Prediksi
+        </button>
+    </div>
+
+    <div class="card" id="juara">
+        <h2>🥇 Tebak Juara Dunia 2026</h2>
+
+        <input type="text" id="negaraJuara" placeholder="Masukkan Nama Negara">
+
+        <button onclick="simpanJuara()">
+            Simpan Juara
+        </button>
+
+        <ul id="listJuara"></ul>
+    </div>
+
+    <div class="card" id="bracket">
+        <h2>🏆 Bracket Fase Gugur</h2>
+
+        <div class="bracket">
+
+            <div class="bracket-box">
+                <h4>16 Besar 1</h4>
+
+                <select>
+                    <option>Argentina</option>
+                    <option>Portugal</option>
+                </select>
+            </div>
+
+            <div class="bracket-box">
+                <h4>16 Besar 2</h4>
+
+                <select>
+                    <option>Brazil</option>
+                    <option>Jerman</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🤖 Prediksi AI</h2>
+
+        <button onclick="prediksiAI()">
+            Prediksi Pemenang
+        </button>
+
+        <div class="ai-box" id="hasilAI">
+            Klik tombol untuk melihat prediksi AI
+        </div>
+    </div>
+
+    <div class="card" id="leaderboard">
+        <h2>🏅 Leaderboard</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Poin</th>
+                </tr>
+            </thead>
+
+            <tbody id="leaderboardBody">
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<footer>
+    FIFA World Cup 2026 Prediction App
+</footer>
+
+<script>
+function simpanPrediksi(){
+    alert("Tombol berhasil diklik!");
+}
+
+function simpanJuara(){
+    alert("Prediksi Juara berhasil!");
+}
+
+function prediksiAI(){
+    document.getElementById("hasilAI").innerHTML =
+    "Prediksi AI Juara Dunia 2026: Argentina";
+}
+</script>
+
+</body>
+</html>
